@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Página chida</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="alumnos.html">Alumnos
+            <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calculos.html">Calculos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+        <div class="row p-5">
+                <div class="col-8">
+                  <div id="alumnosDinamicos" class="row col d-flex justify-content-center">
+          
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="nombre">Nombre de usuario</label>
+                          <input id="nombre" type="text" placeholder="Escribe tu nombre de usuario">
+                          <small id="nombreSmall" class="form-text text-muted">Usuario completo</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email de usuario</label>
+                          <input id="email" type="email" placeholder="Escribe tu email">
+                          <small id="emailSmall" class="form-text text-muted">No olvides el @</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña de usuario</label>
+                            <input id="password" type="password" placeholder="Escribe tu password">
+                            <small id="passwordSmall" class="form-text text-muted">Escribe el password</small>
+                          </div>
+                        <div class="form-group" id="clase">
+                          <input class="clasesEscuela" type="checkbox" name="clase" value="Clase 1">Clase 1<br>
+                          <input class="clasesEscuela" type="checkbox" name="clase" value="Clase 2">Clase 2<br>
+                          <input class="clasesEscuela" type="checkbox" name="clase" value="Clase 3">Clase 3<br>
+                          <input class="clasesEscuela" type="checkbox" name="clase" value="Clase 4">Clase 4<br>
+                          <input class="clasesEscuela" type="checkbox" name="clase" value="Clase 5">Clase 5<br>
+                        </div>
+                        <div class="text-right">
+                          <button type="button" class="btn btn-primary" onclick="Registrar()">Aceptar</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript.js"></script>
+
+</body>
+
+</html>

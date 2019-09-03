@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Página chida</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="alumnos.html">Alumnos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="calculos.html">calculos
+            <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+        <div class="row p-5">
+          <div class="col-8">
+            <div id="calculosDinamicos" class="row col d-flex justify-content-center">          
+
+            </div>
+          </div>
+                
+          <div class="col-4">
+            <div class="card" style="width: 20rem;">
+              <div class="card-body">
+                <h2>Datos del alumno</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="nombre">Nombre del alumno: </label>
+                    <input id="nombre" type="text" placeholder="Nombre">
+                  </div>
+                  <div class="form-group">
+                    <label for="carrera">Carrera del alumno: </label>
+                    <input id="carrera" type="text" placeholder="Carrera">
+                  </div>
+                </form>
+                <h2>Calificaciones</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="Redes">Calificación Redes</label>
+                    <input id="Redes" class="calmat" type="number" placeholder="Redes">
+                    
+                    <label for="Matematicas">Calificación Matematicas</label>
+                    <input id="Matematicas" class="calmat" type="number" placeholder="Matematicas">
+                    
+                    <label for="Historia">Calificación Historia</label>
+                    <input id="Historia" class="calmat" type="number" placeholder="Historia">
+                    
+                    <label for="BD">Calificación Base de datos</label>
+                    <input id="BD" class="calmat" type="number" placeholder="BD">
+                    
+                    <label id="Moviles" for="Moviles">Calificación Moviles</label>
+                    <input class="calmat" type="number" placeholder="Moviles">
+                  </div>
+                  <div class="text-right">
+                    <button type="button" class="btn btn-primary" onclick="Promedio()">Aceptar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="calculos.js"></script>
+
+</body>
+
+</html>
